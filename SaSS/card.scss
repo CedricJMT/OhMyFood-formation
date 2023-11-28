@@ -63,18 +63,29 @@
 
 // /small cards restaurants/ 
 
-.description{
+.menus_description{
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   gap: 5px;
-  flex: 2;
+  font-size: 19px;
+  p{
+    flex: 2;
+  }
+  h5{
+    display: flex;
+    display: flex;    
+  }
 
 }
 
 .small_cards{
-  border: 1px solid black;
+  font-size: 21px;
+  display: flex;
+  flex-direction: column;
+  background: var(--White, #FFF);
   border-radius:15px;
   padding: 15px;
-  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.10);
+  
 }
 
