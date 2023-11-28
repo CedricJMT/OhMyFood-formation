@@ -30,6 +30,10 @@ body {
   background-color: #F6F6F6;
 }
 
+h1 {
+  font-family: "shrikhand";
+}
+
 header {
   /*pour les pages des restaurants*/
 }
@@ -237,6 +241,20 @@ footer h4 {
   padding: 5px;
   border-radius: 5px;
   font-size: 12px;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  flex: 2;
+}
+
+.small_cards {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
 }
 
 /*-Dégradé couleurs bouton-*/
