@@ -1,0 +1,25 @@
+$bg-grey1-color: #EAEAEA;
+$footer-color: #353535;
+$bg-grey2-color: #F6F6F6;
+$bg_white: white;
+$logo-font-shrikhand: 'shrikhand';
+
+
+/*-Dégradé couleurs bouton-*/
+
+$gradient-start-color: #9356DC;
+$gradient-end-color: #FF79DA;
+$gradient-direction: to top;
+$gradient-direction-bottom:to bottom;
+
+@mixin gradient-background($start-color, $end-color, $direction) {
+    background: linear-gradient($direction, $start-color, $end-color);
+  }
+
+
+
+
+
+
+
+

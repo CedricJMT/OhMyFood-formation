@@ -1,0 +1,68 @@
+@import 'variables.scss';
+
+
+.reservation_section {
+    
+   
+    background-color: $bg_white;
+
+    h2 {
+        padding: 20px 80px 0px 20px;
+        height: 31px;
+    }
+}
+
+.summary_button {
+    position: absolute;
+    .txt {
+        padding: 30px 38px 28px 0px;
+    }
+
+}
+
+.icon {
+    color: $gradient-start-color;
+}
+
+.buttons {
+    margin: 0px 20px 0px 33px;
+    position: relative;
+    button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 35px;
+        margin: 30px 0px 0px 0px;
+
+        i {
+            margin-right: 27px;
+        }
+
+    }
+    @media (min-width:1000px){
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+.btnA {
+    margin-bottom: 68px;
+}
+
+.number {
+        width: 24px;
+        height: 24px;
+        background-color: #9356DC;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        position: absolute; 
+        top: 50%; 
+        left: -10px; 
+        transform: translateY(-50%);
+}

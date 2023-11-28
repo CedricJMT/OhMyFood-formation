@@ -1,0 +1,38 @@
+@import 'variables.scss';
+
+body {
+    background-color: $bg-grey1-color;
+
+}
+
+* {
+    font-family: 'Roboto';
+    margin: unset;
+    
+   
+}
+
+.container_setup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+.bg_white{
+    background-color:$bg-white;
+}
+
+.links_reset{
+    text-decoration: none;
+}
+
+.bg_lightgrey{
+    background-color: $bg-grey2-color;
+}
