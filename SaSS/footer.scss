@@ -16,7 +16,16 @@ footer{
     h4{
         font-family: $logo-font-shrikhand;
         color: $bg-white;
+       
+        @media (min-width:1440px){
+            display: flex;
+           padding-left: 16px;
+        }
 
     }
-
+    @media (min-width:1440px){
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 7px;
+    }
 }

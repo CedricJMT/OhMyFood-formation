@@ -9,6 +9,7 @@
     object-fit: cover;
 
 
+
 }
 
 .header_menus{
@@ -16,6 +17,7 @@
     padding-left: 17px;
     align-items: center;
     padding-top: 15px;
+    margin-bottom: 40px;
     
     img{
         width: 21px;
@@ -52,12 +54,25 @@
     button{
         margin: unset;
     }
+    @media (min-width:1440px){
+        width: 634px;
+    }
 }
 
 .menus_section{
     background-color: $bg-grey1-color;
     border-radius: 30px;
     transform: translateY(-65px);
+
+
+    @media (min-width:1440px){
+        width: 1055px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-41px) translateX(192.5px);
+    }
 }
 
 
