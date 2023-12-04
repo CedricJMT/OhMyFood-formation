@@ -1,5 +1,7 @@
 @import 'variables.scss';
 
+
+
 .image-top{
     width: 100%;
     height: 275px ;
@@ -45,6 +47,10 @@
         display: flex;
         justify-content: center;
         text-decoration: none;
+    }
+
+    button{
+        margin: unset;
     }
 }
 
