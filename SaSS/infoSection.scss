@@ -2,25 +2,31 @@
 
 
 .info_Section {
-    
+
     h2 {
         font-family: Roboto;
         font-size: 24px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        height: 68px ;
-        width: 275px;
-        
+        height: 68px;
+        width: auto;
+
     }
 
-    p{
-        height: 46px ;
-        width: 315px;
+    p {
+        height: 46px;
+        width: autopx;
         margin-bottom: 15px;
     }
 
+    @media (min-width: 1440px) {
+        padding: 30px 0 30px 0;
+
+        .btn {
+            margin-bottom: unset;
+        }
+
+    }
 
 }
-
-

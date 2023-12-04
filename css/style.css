@@ -81,12 +81,20 @@ header .header_backlink .backlink {
   font-weight: 700;
   line-height: normal;
   height: 68px;
-  width: 275px;
+  width: auto;
 }
 .info_Section p {
   height: 46px;
-  width: 315px;
+  width: autopx;
   margin-bottom: 15px;
+}
+@media (min-width: 1440px) {
+  .info_Section {
+    padding: 30px 0 30px 0;
+  }
+  .info_Section .btn {
+    margin-bottom: unset;
+  }
 }
 
 /*-Dégradé couleurs bouton-*/
@@ -96,6 +104,11 @@ header .header_backlink .backlink {
 .reservation_section h2 {
   padding: 20px 80px 0px 20px;
   height: 31px;
+}
+@media (min-width: 1440px) {
+  .reservation_section h2 {
+    padding: 20px 80px 0px 220px;
+  }
 }
 
 .summary_button {
@@ -123,16 +136,17 @@ header .header_backlink .backlink {
 .buttons button i {
   margin-right: 27px;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1440px) {
   .buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 25px 180px 50px 180px;
   }
 }
 
 .btnA {
-  margin-bottom: 68px;
+  padding-bottom: 68px;
 }
 
 .number {
@@ -178,12 +192,28 @@ footer h4 {
 .restaurants_cards .cards {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
   gap: 18px;
+  flex: 1;
 }
 .restaurants_cards .cards a {
   text-decoration: none;
   color: black;
+}
+@media (min-width: 1440px) {
+  .restaurants_cards .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 50px;
+    column-gap: 100px;
+    padding-bottom: 30px;
+  }
+  .restaurants_cards .cards a {
+    width: 490px;
+    height: 251px;
+  }
 }
 
 /*-Dégradé couleurs bouton-*/
