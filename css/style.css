@@ -85,8 +85,7 @@ header .header_backlink .backlink {
   padding: 39px 42px 0px 42px;
 }
 .info_Section p {
-  height: 46px;
-  width: autopx;
+  padding: 0 15px 0 15px;
   margin-bottom: 15px;
 }
 @media (min-width: 1440px) {
@@ -215,7 +214,7 @@ footer h4 {
   flex-direction: column;
   margin: 20px 20px 0px 20px;
   gap: 18px;
-  flex: 1;
+  padding-bottom: 66px;
 }
 .restaurants_cards .cards a {
   text-decoration: none;
