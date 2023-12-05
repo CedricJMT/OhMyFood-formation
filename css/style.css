@@ -342,6 +342,9 @@ footer h4 {
   border-radius: unset;
   padding-right: 25px;
 }
+.card .card-content .filled {
+  opacity: 0;
+}
 .card .badge {
   position: absolute;
   top: 10px;
