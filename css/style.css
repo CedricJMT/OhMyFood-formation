@@ -137,14 +137,14 @@ header .header_backlink .backlink {
 .buttons button i {
   margin-right: 27px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
   .buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1439px) {
   .buttons {
     display: flex;
     justify-content: center;
