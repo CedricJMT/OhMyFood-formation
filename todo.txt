@@ -1,0 +1,3 @@
+-verifier et corriger les icones home page et footer
+-animations like et selection menu
+-verifier mise en page avec breakpoint (notamment les menus des restau sur le 2k)
