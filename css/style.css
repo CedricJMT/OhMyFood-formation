@@ -335,14 +335,18 @@ footer h4 {
   padding-left: 13px;
   padding-bottom: 12px;
 }
-.card .card-content .like-icon {
+.card .card-content .like-icon-empty {
   height: 21px;
   width: 22px;
   border-radius: unset;
   padding-right: 25px;
 }
-.card .card-content .filled {
-  opacity: 0;
+.card .card-content .like-icon-filled {
+  height: 21px;
+  width: 22px;
+  border-radius: unset;
+  padding-right: 25px;
+  opacity: 100;
 }
 .card .badge {
   position: absolute;

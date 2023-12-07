@@ -38,15 +38,19 @@
 
 
 
-    .like-icon{
+    .like-icon-empty{
       height: 21px;
       width: 22px;
       border-radius: unset;
       padding-right: 25px;
     }
 
-    .filled{
-      opacity: 0;
+    .like-icon-filled{
+      height: 21px;
+      width: 22px;
+      border-radius: unset;
+      padding-right: 25px;
+      opacity: 100;
     }
   }
  
