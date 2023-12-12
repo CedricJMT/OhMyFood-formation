@@ -340,13 +340,28 @@ footer h4 {
   width: 22px;
   border-radius: unset;
   padding-right: 25px;
+  opacity: 100;
+  transition: opacity 0.5s;
+  position: absolute;
 }
 .card .card-content .like-icon-filled {
   height: 21px;
   width: 22px;
   border-radius: unset;
   padding-right: 25px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+}
+.card .card-content .like-button {
+  position: relative;
+}
+.card .card-content .like-button:hover .like-icon-filled {
   opacity: 100;
+  transition: opacity 1s;
+}
+.card .card-content .like-icon-empty, .card .card-content .like-icon-filled {
+  position: absolute;
 }
 .card .badge {
   position: absolute;

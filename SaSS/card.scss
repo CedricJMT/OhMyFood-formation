@@ -10,8 +10,6 @@
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 
 
-
-
   img {
     width: 100%;
     height: 231px;
@@ -30,30 +28,50 @@
     gap: 5px;
 
 
-    
-    .description{
+
+    .description {
       padding-left: 13px;
       padding-bottom: 12px;
     }
 
 
 
-    .like-icon-empty{
-      height: 21px;
-      width: 22px;
-      border-radius: unset;
-      padding-right: 25px;
-    }
-
-    .like-icon-filled{
+    .like-icon-empty {
       height: 21px;
       width: 22px;
       border-radius: unset;
       padding-right: 25px;
       opacity: 100;
+      transition: opacity 0.5s;
+      position: absolute;
     }
+
+    .like-icon-filled {
+      height: 21px;
+      width: 22px;
+      border-radius: unset;
+      padding-right: 25px;
+      opacity: 0;
+      transition: opacity 0.5s;
+      position: absolute;
+    }
+
+    .like-button{
+      &:hover{
+        .like-icon-filled{
+          opacity: 100;
+          transition: opacity 1s;
+        }
+      }
+      position: relative;
+    }
+    .like-icon-empty, .like-icon-filled{
+      position: absolute;
+    }
+
+
   }
- 
+
 
   .badge {
     position: absolute;
@@ -71,26 +89,27 @@
 
 // /small cards restaurants/ 
 
-.menus_description{
+.menus_description {
   display: flex;
   align-items: center;
   gap: 5px;
-  
-  p{
+
+  p {
     flex: 2;
   }
-  h5{
+
+  h5 {
     display: flex;
-    display: flex;    
+    display: flex;
   }
 
 }
 
-.small_cards{
+.small_cards {
   display: flex;
   flex-direction: column;
   background: var(--White, #FFF);
-  border-radius:15px;
+  border-radius: 15px;
   padding: 15px;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.10);
 }
