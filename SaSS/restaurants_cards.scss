@@ -3,12 +3,14 @@
 .restaurants_cards {
     h2 {
         padding: 40px 80px 0px 20px;
-        height: 31px;
     }
 
     .cards {
-        display: flex;
-        flex-direction: column;
+
+        
+
+        display: grid;
+        // flex-direction: column;
         margin: 20px 20px 0px 20px;
         gap: 18px;
         padding-bottom: 66px;
@@ -18,21 +20,13 @@
             color: black;
         }
 
-        @media (min-width:1440px){
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            row-gap: 50px;
-            column-gap: 100px;
-            padding-bottom: 30px;
-            
-                a{
-                    width: 490px;
-                    height: 251px;
-                }
+        @media (min-width:770px){
+   
 
             
+       
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
             
         }
     }
