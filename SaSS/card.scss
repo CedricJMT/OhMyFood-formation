@@ -57,6 +57,8 @@
     }
 
     .like-button{
+      height: 25px;
+      width: 35px;
       &:hover{
         .like-icon-filled{
           opacity: 100;

@@ -354,6 +354,8 @@ footer h4 {
   position: absolute;
 }
 .card .card-content .like-button {
+  height: 25px;
+  width: 35px;
   position: relative;
 }
 .card .card-content .like-button:hover .like-icon-filled {
@@ -408,6 +410,15 @@ footer h4 {
   font-size: 16px;
   margin-bottom: 57px;
 }
+.btn .fa-solid {
+  width: 15px;
+  height: 20px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
 
 .btn_gradient {
   background: linear-gradient(to top, #9356DC, #FF79DA);
@@ -421,6 +432,30 @@ footer h4 {
   background-color: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   pointer-events: none;
+}
+
+.animation {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: appear 0.5s ease-out forwards;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dishes:nth-child(1) .animated {
+  animation-delay: 0.5s;
+}
+
+.dishes:nth-child(2) .animated {
+  animation-delay: 1.5s;
+}
+
+.dishes:nth-child(3) .animated {
+  animation-delay: 2s;
 }
 
 /*# sourceMappingURL=style.css.map */
