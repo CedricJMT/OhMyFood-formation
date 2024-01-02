@@ -1,0 +1,161 @@
+// cards//
+.card {
+    width: auto;
+    height: 251px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    position: relative;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  
+  
+    img {
+      width: 100%;
+      height: 231px;
+      border-radius: 15px 15px 0px 0px;
+      object-fit: cover;
+      overflow: hidden;
+  
+  
+    }
+  
+    .card-content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5px;
+
+      .description {
+        padding-left: 13px;
+        padding-bottom: 12px;
+      }
+  
+  
+  
+      .like-icon-empty {
+        height: 21px;
+        width: 22px;
+        border-radius: unset;
+        padding-right: 25px;
+        opacity: 100;
+        transition: opacity 0.5s;
+        position: absolute;
+      }
+  
+      .like-icon-filled {
+        height: 21px;
+        width: 22px;
+        border-radius: unset;
+        padding-right: 25px;
+        opacity: 0;
+        transition: opacity 0.5s;
+        position: absolute;
+      }
+  
+      .like-button{
+        height: 25px;
+        width: 35px;
+        &:hover{
+          .like-icon-filled{
+            opacity: 100;
+            transition: opacity 1s;
+          }
+        }
+        position: relative;
+      }
+      .like-icon-empty, .like-icon-filled{
+        position: absolute;
+      }
+  
+  
+    }
+  
+  
+    .badge {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background-color: #99E2D0;
+      color: #008766;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+  }
+  
+  
+  
+  // /small cards restaurants/ 
+  
+  .menus_description {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  
+    p {
+      flex: 2;
+    }
+  
+    h5 {
+      display: flex;
+      display: flex;
+    }
+  
+  }
+  
+  .small_cards {
+    display: flex;
+    flex-direction: column;
+    background: var(--White, #FFF);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.10);
+  }
+
+
+//buttons//
+@import 'variables.scss';
+
+
+.btn{
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    border: 1px;
+    color: $bg_white;
+    width: 218px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 57px;
+
+    .fa-solid{
+        width: 15px;
+        height: 20px;
+    }
+}
+
+.btn:hover{
+    opacity: 0.9;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.50);
+}
+
+.btn_gradient{
+     @include gradient-background(#9356DC, #FF79DA, to top);
+    }
+
+
+
+
+.btn_setup{
+        width: 323px;
+        height: 72px;
+        border: 1px;
+        border-radius: 20px;
+        background-color: $bg-grey2-color;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        pointer-events: none;
+    }
+

@@ -1,11 +1,58 @@
 @import 'variables.scss';
-@import 'bodySettings.scss';
-@import 'header.scss';
-@import 'infoSection.scss';
-@import 'ReservationSection.scss';
-@import 'footer.scss';
-@import 'restaurants_cards.scss';
+@import 'animations.scss';
+@import 'cards_&_buttons.scss';
+@import 'header&footer.scss';
+@import 'homepage.scss';
 @import 'restaurants_pages.scss';
-@import 'card.scss';
-@import 'button.scss';
-@import 'animation.scss';
+
+
+
+
+
+
+
+
+
+
+
+// body settings//
+
+@import 'variables.scss';
+
+body {
+    background-color: $bg-grey1-color;
+}
+
+* {
+    font-family: 'Roboto';
+    margin: unset;
+}
+
+.container_setup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bg_white{
+    background-color:$bg-white;
+}
+
+.links_reset{
+    text-decoration: none;
+}
+
+.bg_lightgrey{
+    background-color: $bg-grey2-color;
+}
+
+h1{
+    font-family: $logo-font-shrikhand;
+}
+
+.inner{
+    max-width: 1080px;
+    margin: 0 auto;
+}

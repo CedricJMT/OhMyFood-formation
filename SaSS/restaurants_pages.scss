@@ -4,13 +4,10 @@
 
 .image-top{
     width: 100%;
-    height: 275px ;
-    
-    object-fit: cover;
-
-
-
+    height: 275px ; 
+    object-fit: cover
 }
+
 
 .header_menus{
     display: flex;
@@ -25,6 +22,7 @@
         padding-left: 20px;
     }
 }
+
 
 .dishes{
     display: flex;
@@ -41,6 +39,7 @@
     }
 }
 
+
 .menu_content{
     display: flex;
     flex-direction: column;
@@ -54,10 +53,12 @@
     button{
         margin: unset;
     }
+
     @media (min-width:1440px){
         width: 634px;
     }
 }
+
 
 .menus_section{
     background-color: $bg-grey1-color;

@@ -5,7 +5,7 @@ $bg_white: white;
 $logo-font-shrikhand: 'shrikhand';
 
 
-/*-Dégradé couleurs bouton-*/
+// gradient button//
 
 $gradient-start-color: #9356DC;
 $gradient-end-color: #FF79DA;
@@ -15,11 +15,3 @@ $gradient-direction-bottom:to bottom;
 @mixin gradient-background($start-color, $end-color, $direction) {
     background: linear-gradient($direction, $start-color, $end-color);
   }
-
-
-
-
-
-
-
-
