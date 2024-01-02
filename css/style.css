@@ -193,16 +193,19 @@
 }
 .menus_description h5 {
   display: flex;
-  display: flex;
 }
 
-.small_cards {
+.menus_cards {
   display: flex;
   flex-direction: column;
   background: var(--White, #FFF);
   border-radius: 15px;
   padding: 15px;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.menus_cards .menu_check {
+  background-color: #99E2D0;
+  display: flex;
 }
 
 .btn {
