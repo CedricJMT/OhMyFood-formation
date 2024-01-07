@@ -11,7 +11,6 @@
 }
 
 .logoAnimate {
-  --duration: 2.5s;
   width: 44px;
   height: 44px;
   position: fixed;
@@ -28,7 +27,7 @@
   top: 37px;
   left: 19px;
   transform: translate(-18px, -18px);
-  animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  animation: dotRect 2.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
 }
 .logoAnimate svg {
   display: block;
@@ -205,7 +204,6 @@
 }
 .menus_cards .menu_check {
   background-color: #99E2D0;
-  display: flex;
 }
 
 .btn {
