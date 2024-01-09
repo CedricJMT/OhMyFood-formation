@@ -1,7 +1,7 @@
 @import 'variables.scss';
 @import 'animations.scss';
 @import 'cards_&_buttons.scss';
-@import 'header&footer.scss';
+@import 'header_&_footer.scss';
 @import 'homepage.scss';
 @import 'restaurants_pages.scss';
 
@@ -22,6 +22,10 @@
 body {
     background-color: $bg-grey1-color;
 }
+.body_restaurants{
+    background-color: #FFFFFF;
+}
+
 
 * {
     font-family: 'Roboto';

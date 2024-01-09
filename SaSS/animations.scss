@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 
 // loader//
 .loader{
@@ -101,7 +103,13 @@
 }
 
 
-// delay-dishes
+//like button//
+
+.like-button:hover .like-icon-filled {
+    opacity: 100;
+    transition: opacity 1s;}
+
+// delay-dishes//
 
 
 .animation {
@@ -131,3 +139,20 @@
 }
 
 
+//checkmark//
+
+
+.checkmark{
+    transform: rotateZ(180deg);
+    transition: transform 1s ;
+    animation: fadeOut 1s, rotateOut 1s;
+    overflow:hidden;
+    color:$color-tertiary;
+}
+.menus_cards:hover .check{
+    width: 80px;
+    }
+.menus_cards:hover .checkmark{
+        transform: rotateZ(0deg);
+        animation: fadeIn 1s, rotateIn 1s;
+        }
