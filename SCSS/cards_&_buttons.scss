@@ -28,47 +28,14 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 5px;
 
       .description {
         padding-left: 13px;
         padding-bottom: 12px;
+        gap: 5px
       }
 
-      .like-icon-empty {
-        height: 21px;
-        width: 22px;
-        border-radius: unset;
-        padding-right: 25px;
-        opacity: 100;
-        transition: opacity 0.5s;
-        position: absolute;
-      }
-  
-      .like-icon-filled {
-        height: 21px;
-        width: 22px;
-        border-radius: unset;
-        padding-right: 25px;
-        opacity: 0;
-        transition: opacity 0.5s;
-        position: absolute;
-      }
-  
-      .like-button{
-        height: 25px;
-        width: 35px;
-        &:hover{
-          .like-icon-filled{
-            opacity: 100;
-            transition: opacity 1s;
-          }
-        }
-        position: relative;
-      }
-      .like-icon-empty, .like-icon-filled{
-        position: absolute;
-      }
+      @include likeButtonStyles;
   
   
     }
@@ -105,7 +72,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    flex: 1;
+  
   
     p {
    flex: 2;

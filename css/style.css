@@ -152,11 +152,6 @@
     display: none;
   }
 }
-.like-button:hover .like-icon-filled {
-  opacity: 100;
-  transition: opacity 1s;
-}
-
 .animation {
   opacity: 0;
   transform: translateY(20px);
@@ -253,11 +248,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5px;
 }
 .card .card-content .description {
   padding-left: 13px;
   padding-bottom: 12px;
+  gap: 5px;
 }
 .card .card-content .like-icon-empty {
   height: 21px;
@@ -286,9 +281,6 @@
   opacity: 100;
   transition: opacity 1s;
 }
-.card .card-content .like-icon-empty, .card .card-content .like-icon-filled {
-  position: absolute;
-}
 .card .badge {
   position: absolute;
   top: 10px;
@@ -315,7 +307,6 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  flex: 1;
 }
 .menus_cards .menus_description p {
   flex: 2;
@@ -446,7 +437,7 @@ header .header_backlink .backlink {
 }
 footer {
   background-color: #353535;
-  padding: 22px 25px;
+  padding: 25px 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -459,6 +450,7 @@ footer a {
 footer h4 {
   font-family: "shrikhand";
   color: white;
+  font-weight: 400;
 }
 @media (min-width: 1440px) {
   footer h4 {
@@ -583,7 +575,7 @@ footer h4 {
 
 .info_Section h2 {
   font-family: Roboto;
-  font-size: 24px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -765,7 +757,7 @@ footer h4 {
 
 .info_Section h2 {
   font-family: Roboto;
-  font-size: 24px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -820,9 +812,34 @@ footer h4 {
   margin-bottom: 40px;
 }
 .header_menus img {
-  width: 21px;
-  height: 21px;
   padding-left: 20px;
+}
+.header_menus .like-icon-empty {
+  height: 21px;
+  width: 22px;
+  border-radius: unset;
+  padding-right: 25px;
+  opacity: 100;
+  transition: opacity 0.5s;
+  position: absolute;
+}
+.header_menus .like-icon-filled {
+  height: 21px;
+  width: 22px;
+  border-radius: unset;
+  padding-right: 25px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+}
+.header_menus .like-button {
+  height: 25px;
+  width: 35px;
+  position: relative;
+}
+.header_menus .like-button:hover .like-icon-filled {
+  opacity: 100;
+  transition: opacity 1s;
 }
 
 .dishes {
@@ -911,6 +928,10 @@ footer h4 {
 }
 body {
   background-color: #EAEAEA;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .body_restaurants {

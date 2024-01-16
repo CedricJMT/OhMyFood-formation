@@ -58,7 +58,7 @@ header {
 
 footer {
     background-color: $footer-color;
-    padding: 22px 25px;
+    padding:25px 30px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -73,6 +73,7 @@ footer {
     h4 {
         font-family: $logo-font-shrikhand;
         color: $bg-white;
+        font-weight: 400;
 
         @media (min-width:1440px) {
             display: flex;

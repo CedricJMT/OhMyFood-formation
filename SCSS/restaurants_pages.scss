@@ -3,6 +3,8 @@
 
 
 
+
+
 .image-top{
     width: 100%;
     height: 275px ; 
@@ -18,10 +20,10 @@
     margin-bottom: 40px;
     
     img{
-        width: 21px;
-        height: 21px;
         padding-left: 20px;
     }
+
+    @include likeButtonStyles;
 }
 
 
