@@ -2,9 +2,9 @@
 
 
 // loader//
-.loader{
+.loader {
     position: fixed;
-    inset:0;
+    inset: 0;
     z-index: 2;
     background-color: $bg-grey1-color;
     height: 100%;
@@ -15,11 +15,12 @@
 }
 
 
-.logoAnimate{
+.logoAnimate {
     width: 44px;
     height: 44px;
     position: fixed;
     z-index: 3;
+
     &:before {
         content: '';
         width: 6px;
@@ -32,14 +33,15 @@
         left: 19px;
         transform: translate(-18px, -18px);
         animation: dotRect 2.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-        
+
     }
+
     svg {
         display: block;
         width: 100%;
         height: 100%;
-        rect
-         {
+
+        rect {
             fill: none;
             stroke: $gradient-start-color;
             stroke-width: 10px;
@@ -52,25 +54,28 @@
             stroke-dashoffset: 0;
             animation: pathRect 2.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
         }
-        
+
     }
-   
+
 }
 
 @keyframes pathRect {
     25% {
         stroke-dashoffset: 64;
     }
+
     50% {
         stroke-dashoffset: 128;
         opacity: 1;
     }
+
     75% {
         stroke-dashoffset: 192;
     }
+
     100% {
         stroke-dashoffset: 256;
-         opacity: 0;   
+        opacity: 0;
     }
 }
 
@@ -78,21 +83,24 @@
     25% {
         transform: translate(0, 0);
     }
+
     50% {
         transform: translate(18px, -18px);
-        opacity: 1;        
+        opacity: 1;
     }
+
     75% {
         transform: translate(0, -36px);
     }
+
     100% {
         transform: translate(-18px, -18px);
         opacity: 0;
     }
 }
 
-@keyframes loaderAnimation{
-    50%{
+@keyframes loaderAnimation {
+    50% {
         opacity: 1;
     }
 
@@ -112,7 +120,7 @@
     opacity: 0;
     transform: translateY(20px);
     animation: appear 0.7s ease-out forwards;
-    
+
 }
 
 @keyframes appear {
@@ -138,57 +146,58 @@
 //checkmark//
 
 
-.checkmark{
+.checkmark {
     transform: rotateZ(180deg);
-    transition: transform 1s ;
+    transition: transform 1s;
     animation: fadeOut 1s, rotateOut 1s;
-    overflow:hidden;
-    color:$color-tertiary;
+    overflow: hidden;
+    color: $color-tertiary;
 }
-.menus_cards:hover .check{
+
+.menus_cards:hover .check {
     width: 80px;
+}
+
+.menus_cards:hover .checkmark {
+    transform: rotateZ(0deg);
+    animation: fadeIn 1s, rotateIn 1s;
+}
+
+
+
+//like buttons style//
+
+@mixin likeButtonStyles {
+    .like-icon-empty {
+        height: 21px;
+        width: 22px;
+        border-radius: unset;
+        padding-right: 25px;
+        opacity: 100;
+        transition: opacity 0.5s;
+        position: absolute;
     }
-.menus_cards:hover .checkmark{
-        transform: rotateZ(0deg);
-        animation: fadeIn 1s, rotateIn 1s;
-        }
 
+    .like-icon-filled {
+        height: 21px;
+        width: 22px;
+        border-radius: unset;
+        padding-right: 25px;
+        opacity: 0;
+        transition: opacity 0.5s;
+        position: absolute;
+    }
 
+    .like-button {
+        height: 25px;
+        width: 35px;
+        position: relative;
 
-        //like buttons style//
-
-        @mixin likeButtonStyles {
-            .like-icon-empty {
-              height: 21px;
-              width: 22px;
-              border-radius: unset;
-              padding-right: 25px;
-              opacity: 100;
-              transition: opacity 0.5s;
-              position: absolute;
-            }
-          
+        &:hover {
             .like-icon-filled {
-              height: 21px;
-              width: 22px;
-              border-radius: unset;
-              padding-right: 25px;
-              opacity: 0;
-              transition: opacity 0.5s;
-              position: absolute;
+                opacity: 100;
+                transition: opacity 1s;
             }
-          
-            .like-button {
-              height: 25px;
-              width: 35px;
-              position: relative;
-          
-              &:hover {
-                .like-icon-filled {
-                  opacity: 100;
-                  transition: opacity 1s;
-                }
-              }
-            }
-          }
-          
+        }
+    }
+}

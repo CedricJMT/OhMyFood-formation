@@ -10,31 +10,50 @@ $color-tertiary: #99E2D0;
 $gradient-start-color: #9356DC;
 $gradient-end-color: #FF79DA;
 $gradient-direction: to top;
-$gradient-direction-bottom:to bottom;
-$color-checkmark:#99E2D0;
+$gradient-direction-bottom: to bottom;
+$color-checkmark: #99E2D0;
 
 @mixin gradient-background($start-color, $end-color, $direction) {
     background: linear-gradient($direction, $start-color, $end-color);
-  }
+}
 
 
 @keyframes fadeIn {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeOut {
-    0%   { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes rotateIn {
-    0%   { transform: rotateZ(180deg); }
-    100% { transform: rotateZ(0deg); }
+    0% {
+        transform: rotateZ(180deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
 }
 
 @keyframes rotateOut {
-    0%   { transform: rotateZ(0deg); }
-    100% { transform: rotateZ(180deg); }
-}
+    0% {
+        transform: rotateZ(0deg);
+    }
 
+    100% {
+        transform: rotateZ(180deg);
+    }
+}

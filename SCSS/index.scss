@@ -20,13 +20,13 @@
 @import 'variables.scss';
 
 body {
-    background-color: $bg-grey1-color;
     font-family: 'Roboto', sans-serif;
     color: #000;
     max-width: 1400px;
     margin: 0 auto;
 }
-.body_restaurants{
+
+.body_restaurants {
     background-color: #FFFFFF;
 }
 
@@ -36,7 +36,7 @@ body {
     margin: unset;
 }
 
-.container_setup{
+.container_setup {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,23 +44,27 @@ body {
     text-align: center;
 }
 
-.bg_white{
-    background-color:$bg-white;
+.bg_white {
+    background-color: $bg-white;
 }
 
-.links_reset{
+.links_reset {
     text-decoration: none;
 }
 
-.bg_lightgrey{
+.bg_lightgrey {
     background-color: $bg-grey2-color;
 }
 
-h1{
+h1 {
     font-family: $logo-font-shrikhand;
 }
 
-.inner{
+.inner {
     max-width: 1080px;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
 }
