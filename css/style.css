@@ -350,6 +350,12 @@
   width: 15px;
   height: 20px;
 }
+@media (min-width: 720px) {
+  .btn {
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+}
 
 .btn:hover {
   opacity: 0.9;
@@ -515,6 +521,7 @@ footer h4 {
 }
 .reservation_section {
   background-color: white;
+  max-width: 1440px;
 }
 .reservation_section h2 {
   padding: 20px 80px 0px 20px;
@@ -522,7 +529,7 @@ footer h4 {
 }
 @media (min-width: 1440px) {
   .reservation_section h2 {
-    padding: 20px 80px 0px 220px;
+    padding: 20px 80px 0px 180px;
   }
 }
 
@@ -551,19 +558,24 @@ footer h4 {
 .buttons button i {
   margin-right: 27px;
 }
-@media (max-width: 1439px) {
+@media (min-width: 720px) {
   .buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 25px 160px 50px 151px;
   }
 }
 @media (min-width: 1439px) {
   .buttons {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 25px 180px 50px 180px;
+    gap: 134px;
+    padding: 25px 160px 50px 151px;
   }
 }
 
@@ -596,11 +608,16 @@ footer h4 {
   line-height: normal;
   height: 68px;
   width: auto;
-  padding: 39px 42px 0px 42px;
+  padding: 39px 42px 100px 42px;
 }
 .info_Section p {
   padding: 0 15px 0 15px;
   margin-bottom: 15px;
+}
+@media (min-width: 720px) {
+  .info_Section h2 {
+    padding: 30px 42px 0px 42px;
+  }
 }
 @media (min-width: 1440px) {
   .info_Section {
@@ -608,6 +625,9 @@ footer h4 {
   }
   .info_Section .btn {
     margin-bottom: unset;
+  }
+  .info_Section h2 {
+    padding: 0px 42px 0px 42px;
   }
 }
 
@@ -697,6 +717,7 @@ footer h4 {
 }
 .reservation_section {
   background-color: white;
+  max-width: 1440px;
 }
 .reservation_section h2 {
   padding: 20px 80px 0px 20px;
@@ -704,7 +725,7 @@ footer h4 {
 }
 @media (min-width: 1440px) {
   .reservation_section h2 {
-    padding: 20px 80px 0px 220px;
+    padding: 20px 80px 0px 180px;
   }
 }
 
@@ -733,19 +754,24 @@ footer h4 {
 .buttons button i {
   margin-right: 27px;
 }
-@media (max-width: 1439px) {
+@media (min-width: 720px) {
   .buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 25px 160px 50px 151px;
   }
 }
 @media (min-width: 1439px) {
   .buttons {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 25px 180px 50px 180px;
+    gap: 134px;
+    padding: 25px 160px 50px 151px;
   }
 }
 
@@ -778,11 +804,16 @@ footer h4 {
   line-height: normal;
   height: 68px;
   width: auto;
-  padding: 39px 42px 0px 42px;
+  padding: 39px 42px 100px 42px;
 }
 .info_Section p {
   padding: 0 15px 0 15px;
   margin-bottom: 15px;
+}
+@media (min-width: 720px) {
+  .info_Section h2 {
+    padding: 30px 42px 0px 42px;
+  }
 }
 @media (min-width: 1440px) {
   .info_Section {
@@ -790,6 +821,9 @@ footer h4 {
   }
   .info_Section .btn {
     margin-bottom: unset;
+  }
+  .info_Section h2 {
+    padding: 0px 42px 0px 42px;
   }
 }
 

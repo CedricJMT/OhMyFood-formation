@@ -4,13 +4,14 @@
 
 .reservation_section {
     background-color: $bg_white;
+    max-width: 1440px;
 
     h2 {
         padding: 20px 80px 0px 20px;
         height: 31px;
 
         @media (min-width:1440px) {
-            padding: 20px 80px 0px 220px;
+            padding: 20px 80px 0px 180px;
         }
     }
 }
@@ -42,20 +43,26 @@
         i {
             margin-right: 27px;
         }
-
     }
 
-    @media (max-width:1439px) {
+
+    @media (min-width:720px){
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 25px 160px 50px 151px;
     }
+
 
     @media (min-width:1439px) {
         display: flex;
+        flex-direction: row;
+        align-items: center;
         justify-content: center;
-        gap: 20px;
-        padding: 25px 180px 50px 180px;
+        gap: 134px;
+        padding: 25px 160px 50px 151px;
 
     }
 }
@@ -91,7 +98,7 @@
         line-height: normal;
         height: 68px;
         width: auto;
-        padding: 39px 42px 0px 42px;
+        padding: 39px 42px 100px 42px;
 
     }
 
@@ -100,11 +107,20 @@
         margin-bottom: 15px;
     }
 
+    @media (min-width: 720px){
+        h2{
+            padding:30px 42px 0px 42px ;
+        }
+    }
     @media (min-width: 1440px) {
         padding: 30px 0 30px 0;
 
         .btn {
             margin-bottom: unset;
+        }
+
+        h2{
+            padding:0px 42px 0px 42px ;
         }
 
     }
