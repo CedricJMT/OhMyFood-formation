@@ -1,6 +1,45 @@
-@import 'variables.scss';
+// section informations/information section //
 
-// functioning section//
+.info_Section {
+
+    h2 {
+        font-family: Roboto;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        height: 68px;
+        width: auto;
+        padding: 39px 42px 95px 42px;
+    }
+
+    p {
+        padding: 0 15px 0 15px;
+        margin-bottom: 15px;
+    }
+
+    @media (min-width: 720px){
+        h2{
+            padding:30px 42px 0px 42px ;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        padding: 30px 0 30px 0;
+
+        .btn {
+            margin-bottom: unset;
+        }
+
+        h2{
+            padding:0px 42px 0px 42px ;
+        }
+    }
+
+}
+
+
+// section explicative fonctionnement du site/functioning section //
 
 .reservation_section {
     background-color: $bg_white;
@@ -14,18 +53,6 @@
             padding: 20px 80px 0px 180px;
         }
     }
-}
-
-.summary_button {
-    position: absolute;
-
-    .txt {
-        padding: 30px 38px 28px 0px;
-    }
-}
-
-.icon {
-    color: $gradient-start-color;
 }
 
 .buttons {
@@ -71,6 +98,14 @@
     padding-bottom: 68px;
 }
 
+.summary_button {
+    position: absolute;
+
+    .txt {
+        padding: 30px 38px 28px 0px;
+    }
+}
+
 .number {
     width: 24px;
     height: 24px;
@@ -88,48 +123,12 @@
     transform: translateY(-50%);
 }
 
-.info_Section {
-
-    h2 {
-        font-family: Roboto;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        height: 68px;
-        width: auto;
-        padding: 39px 42px 100px 42px;
-
-    }
-
-    p {
-        padding: 0 15px 0 15px;
-        margin-bottom: 15px;
-    }
-
-    @media (min-width: 720px){
-        h2{
-            padding:30px 42px 0px 42px ;
-        }
-    }
-    @media (min-width: 1440px) {
-        padding: 30px 0 30px 0;
-
-        .btn {
-            margin-bottom: unset;
-        }
-
-        h2{
-            padding:0px 42px 0px 42px ;
-        }
-
-    }
-
+.icon {
+    color: $gradient-start-color;
 }
 
 
-
-// homepage restaurants cards//
+//section des restaurants / restaurant's cards section //
 
 .restaurants_cards {
     h2 {

@@ -1,9 +1,4 @@
-@import 'variables.scss';
-@import 'homepage.scss';
-
-
-
-
+// image haut de page/ Image top //
 
 .image-top {
     width: 100%;
@@ -11,6 +6,26 @@
     object-fit: cover
 }
 
+// section des menus / menu section //
+
+.menus_section {
+    background-color: $bg-grey1-color;
+    border-radius: 30px;
+    transform: translateY(-65px);
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+    @media (min-width:1440px) {
+        width: 1055px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-41px);
+
+    }
+}
 
 .header_menus {
     display: flex;
@@ -25,24 +40,6 @@
 
     @include likeButtonStyles;
 }
-
-
-.dishes {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin: 0px 20px 0px 20px;
-
-    h3 {
-        display: flex;
-        align-items: flex-start;
-        border-bottom: 3px solid #99E2D0;
-        padding-bottom: 5px;
-        width: 40px;
-        overflow: visible;
-    }
-}
-
 
 .menu_content {
     display: flex;
@@ -64,26 +61,18 @@
     }
 }
 
+.dishes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0px 20px 0px 20px;
 
-.menus_section {
-    background-color: $bg-grey1-color;
-    border-radius: 30px;
-    transform: translateY(-65px);
-    margin: 0 auto;
-    padding-bottom: 50px;
-
-
-
-    @media (min-width:1440px) {
-        width: 1055px;
-        height: auto;
+    h3 {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transform: translateY(-41px);
-
+        align-items: flex-start;
+        border-bottom: 3px solid #99E2D0;
+        padding-bottom: 5px;
+        width: 40px;
+        overflow: visible;
     }
-
-
 }

@@ -388,6 +388,38 @@
   justify-content: center;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rotateIn {
+  0% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes rotateOut {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(180deg);
+  }
+}
 header h1 {
   font-family: "shrikhand";
   text-align: center;
@@ -424,38 +456,6 @@ header .header_backlink .backlink {
   padding: 17px;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes rotateIn {
-  0% {
-    transform: rotateZ(180deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
-@keyframes rotateOut {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  100% {
-    transform: rotateZ(180deg);
-  }
-}
 footer {
   background-color: #353535;
   padding: 25px 30px;
@@ -487,38 +487,37 @@ footer h4 {
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+.info_Section h2 {
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  height: 68px;
+  width: auto;
+  padding: 39px 42px 95px 42px;
+}
+.info_Section p {
+  padding: 0 15px 0 15px;
+  margin-bottom: 15px;
+}
+@media (min-width: 720px) {
+  .info_Section h2 {
+    padding: 30px 42px 0px 42px;
   }
 }
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
+@media (min-width: 1440px) {
+  .info_Section {
+    padding: 30px 0 30px 0;
   }
-  100% {
-    opacity: 0;
+  .info_Section .btn {
+    margin-bottom: unset;
   }
-}
-@keyframes rotateIn {
-  0% {
-    transform: rotateZ(180deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
+  .info_Section h2 {
+    padding: 0px 42px 0px 42px;
   }
 }
-@keyframes rotateOut {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  100% {
-    transform: rotateZ(180deg);
-  }
-}
+
 .reservation_section {
   background-color: white;
   max-width: 1440px;
@@ -531,17 +530,6 @@ footer h4 {
   .reservation_section h2 {
     padding: 20px 80px 0px 180px;
   }
-}
-
-.summary_button {
-  position: absolute;
-}
-.summary_button .txt {
-  padding: 30px 38px 28px 0px;
-}
-
-.icon {
-  color: #9356DC;
 }
 
 .buttons {
@@ -583,152 +571,6 @@ footer h4 {
   padding-bottom: 68px;
 }
 
-.number {
-  width: 24px;
-  height: 24px;
-  background-color: #9356DC;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 12px;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: -10px;
-  transform: translateY(-50%);
-}
-
-.info_Section h2 {
-  font-family: Roboto;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  height: 68px;
-  width: auto;
-  padding: 39px 42px 100px 42px;
-}
-.info_Section p {
-  padding: 0 15px 0 15px;
-  margin-bottom: 15px;
-}
-@media (min-width: 720px) {
-  .info_Section h2 {
-    padding: 30px 42px 0px 42px;
-  }
-}
-@media (min-width: 1440px) {
-  .info_Section {
-    padding: 30px 0 30px 0;
-  }
-  .info_Section .btn {
-    margin-bottom: unset;
-  }
-  .info_Section h2 {
-    padding: 0px 42px 0px 42px;
-  }
-}
-
-.restaurants_cards h2 {
-  padding: 40px 80px 0px 20px;
-}
-.restaurants_cards .cards {
-  display: grid;
-  margin: 20px 20px 0px 20px;
-  gap: 18px;
-  padding-bottom: 66px;
-}
-.restaurants_cards .cards a {
-  text-decoration: none;
-  color: black;
-}
-@media (min-width: 770px) {
-  .restaurants_cards .cards {
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes rotateIn {
-  0% {
-    transform: rotateZ(180deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
-@keyframes rotateOut {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  100% {
-    transform: rotateZ(180deg);
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes rotateIn {
-  0% {
-    transform: rotateZ(180deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
-@keyframes rotateOut {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  100% {
-    transform: rotateZ(180deg);
-  }
-}
-.reservation_section {
-  background-color: white;
-  max-width: 1440px;
-}
-.reservation_section h2 {
-  padding: 20px 80px 0px 20px;
-  height: 31px;
-}
-@media (min-width: 1440px) {
-  .reservation_section h2 {
-    padding: 20px 80px 0px 180px;
-  }
-}
-
 .summary_button {
   position: absolute;
 }
@@ -736,49 +578,6 @@ footer h4 {
   padding: 30px 38px 28px 0px;
 }
 
-.icon {
-  color: #9356DC;
-}
-
-.buttons {
-  margin: 0px 20px 0px 33px;
-  position: relative;
-}
-.buttons button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding-left: 35px;
-  margin: 30px 0px 0px 0px;
-}
-.buttons button i {
-  margin-right: 27px;
-}
-@media (min-width: 720px) {
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    padding: 25px 160px 50px 151px;
-  }
-}
-@media (min-width: 1439px) {
-  .buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 134px;
-    padding: 25px 160px 50px 151px;
-  }
-}
-
-.btnA {
-  padding-bottom: 68px;
-}
-
 .number {
   width: 24px;
   height: 24px;
@@ -796,35 +595,8 @@ footer h4 {
   transform: translateY(-50%);
 }
 
-.info_Section h2 {
-  font-family: Roboto;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  height: 68px;
-  width: auto;
-  padding: 39px 42px 100px 42px;
-}
-.info_Section p {
-  padding: 0 15px 0 15px;
-  margin-bottom: 15px;
-}
-@media (min-width: 720px) {
-  .info_Section h2 {
-    padding: 30px 42px 0px 42px;
-  }
-}
-@media (min-width: 1440px) {
-  .info_Section {
-    padding: 30px 0 30px 0;
-  }
-  .info_Section .btn {
-    margin-bottom: unset;
-  }
-  .info_Section h2 {
-    padding: 0px 42px 0px 42px;
-  }
+.icon {
+  color: #9356DC;
 }
 
 .restaurants_cards h2 {
@@ -851,6 +623,25 @@ footer h4 {
   width: 100%;
   height: 275px;
   object-fit: cover;
+}
+
+.menus_section {
+  background-color: #EAEAEA;
+  border-radius: 30px;
+  transform: translateY(-65px);
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+@media (min-width: 1440px) {
+  .menus_section {
+    width: 1055px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-41px);
+  }
 }
 
 .header_menus {
@@ -891,21 +682,6 @@ footer h4 {
   transition: opacity 1s;
 }
 
-.dishes {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin: 0px 20px 0px 20px;
-}
-.dishes h3 {
-  display: flex;
-  align-items: flex-start;
-  border-bottom: 3px solid #99E2D0;
-  padding-bottom: 5px;
-  width: 40px;
-  overflow: visible;
-}
-
 .menu_content {
   display: flex;
   flex-direction: column;
@@ -925,23 +701,19 @@ footer h4 {
   }
 }
 
-.menus_section {
-  background-color: #EAEAEA;
-  border-radius: 30px;
-  transform: translateY(-65px);
-  margin: 0 auto;
-  padding-bottom: 50px;
+.dishes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0px 20px 0px 20px;
 }
-@media (min-width: 1440px) {
-  .menus_section {
-    width: 1055px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-41px);
-  }
+.dishes h3 {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+  width: 40px;
+  overflow: visible;
 }
 
 @keyframes fadeIn {
